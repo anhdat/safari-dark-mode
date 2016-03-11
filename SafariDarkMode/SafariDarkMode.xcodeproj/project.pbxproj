@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7D60421C9322C10010D204 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60411C9322C10010D204 /* StringHelpers.swift */; };
+		1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60431C9322DD0010D204 /* ThemedWebView.swift */; };
+		1A7D60461C9329160010D204 /* BackgroundInjection.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60451C9329160010D204 /* BackgroundInjection.js */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
 		1AE4027D1C931918004B212D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027C1C931918004B212D /* ViewController.swift */; };
 		1AE402801C931918004B212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4027E1C931918004B212D /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7D60411C9322C10010D204 /* StringHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		1A7D60431C9322DD0010D204 /* ThemedWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedWebView.swift; sourceTree = "<group>"; };
+		1A7D60451C9329160010D204 /* BackgroundInjection.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BackgroundInjection.js; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4027A1C931918004B212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE4027C1C931918004B212D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				1AE4027A1C931918004B212D /* AppDelegate.swift */,
 				1AE4027C1C931918004B212D /* ViewController.swift */,
 				1AE4027E1C931918004B212D /* Main.storyboard */,
+				1A7D60411C9322C10010D204 /* StringHelpers.swift */,
+				1A7D60431C9322DD0010D204 /* ThemedWebView.swift */,
+				1A7D60451C9329160010D204 /* BackgroundInjection.js */,
 				1AE402811C931918004B212D /* Assets.xcassets */,
 				1AE402831C931918004B212D /* LaunchScreen.storyboard */,
 				1AE402861C931918004B212D /* Info.plist */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7D60461C9329160010D204 /* BackgroundInjection.js in Resources */,
 				1AE402851C931918004B212D /* LaunchScreen.storyboard in Resources */,
 				1AE402821C931918004B212D /* Assets.xcassets in Resources */,
 				1AE402801C931918004B212D /* Main.storyboard in Resources */,
@@ -258,6 +268,8 @@
 			files = (
 				1AE4027D1C931918004B212D /* ViewController.swift in Sources */,
 				1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */,
+				1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */,
+				1A7D60421C9322C10010D204 /* StringHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +494,7 @@
 				1AE402A11C931919004B212D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE402A21C931919004B212D /* Build configuration list for PBXNativeTarget "SafariDarkModeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				1AE402A41C931919004B212D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE402A51C931919004B212D /* Build configuration list for PBXNativeTarget "SafariDarkModeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				1AE402A71C931919004B212D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
