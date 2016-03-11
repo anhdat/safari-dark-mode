@@ -10,6 +10,8 @@
 		1A7D60421C9322C10010D204 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60411C9322C10010D204 /* StringHelpers.swift */; };
 		1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60431C9322DD0010D204 /* ThemedWebView.swift */; };
 		1A7D60461C9329160010D204 /* BackgroundInjection.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60451C9329160010D204 /* BackgroundInjection.js */; };
+		1A7D60491C933F8D0010D204 /* nightshift.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60471C933F8D0010D204 /* nightshift.css */; };
+		1A7D604A1C933F8D0010D204 /* solarized.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60481C933F8D0010D204 /* solarized.css */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
 		1AE4027D1C931918004B212D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027C1C931918004B212D /* ViewController.swift */; };
 		1AE402801C931918004B212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4027E1C931918004B212D /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		1A7D60411C9322C10010D204 /* StringHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
 		1A7D60431C9322DD0010D204 /* ThemedWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedWebView.swift; sourceTree = "<group>"; };
 		1A7D60451C9329160010D204 /* BackgroundInjection.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BackgroundInjection.js; sourceTree = "<group>"; };
+		1A7D60471C933F8D0010D204 /* nightshift.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = nightshift.css; sourceTree = "<group>"; };
+		1A7D60481C933F8D0010D204 /* solarized.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = solarized.css; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4027A1C931918004B212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE4027C1C931918004B212D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				1A7D60411C9322C10010D204 /* StringHelpers.swift */,
 				1A7D60431C9322DD0010D204 /* ThemedWebView.swift */,
 				1A7D60451C9329160010D204 /* BackgroundInjection.js */,
+				1A7D60471C933F8D0010D204 /* nightshift.css */,
+				1A7D60481C933F8D0010D204 /* solarized.css */,
 				1AE402811C931918004B212D /* Assets.xcassets */,
 				1AE402831C931918004B212D /* LaunchScreen.storyboard */,
 				1AE402861C931918004B212D /* Info.plist */,
@@ -202,6 +208,7 @@
 				TargetAttributes = {
 					1AE402761C931918004B212D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2C68524SPS;
 					};
 					1AE4028A1C931919004B212D = {
 						CreatedOnToolsVersion = 7.3;
@@ -238,8 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7D60491C933F8D0010D204 /* nightshift.css in Resources */,
 				1A7D60461C9329160010D204 /* BackgroundInjection.js in Resources */,
 				1AE402851C931918004B212D /* LaunchScreen.storyboard in Resources */,
+				1A7D604A1C933F8D0010D204 /* solarized.css in Resources */,
 				1AE402821C931918004B212D /* Assets.xcassets in Resources */,
 				1AE402801C931918004B212D /* Main.storyboard in Resources */,
 			);
@@ -411,10 +420,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SafariDarkMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.anhd.SafariDarkMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SafariDarkMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.anhd.SafariDarkMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

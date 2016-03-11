@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPB-qV-ks6">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
     </dependencies>
     <scenes>
@@ -50,6 +49,16 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sGj-7e-jKi"/>
+                                    <barButtonItem title="yo" id="Agj-iF-zYe">
+                                        <connections>
+                                            <action selector="yoClicked:" destination="vTo-9L-bTV" id="DMK-uG-qlV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="ya" id="Yzu-fR-fUP">
+                                        <connections>
+                                            <action selector="yaClicked:" destination="vTo-9L-bTV" id="5H3-J7-wgf"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="barTintColor" red="0.23181855370000001" green="0.23181855370000001" blue="0.23181855370000001" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>

@@ -90,6 +90,31 @@ class ViewController: UIViewController {
         let request = NSURLRequest(URL: url)
         webView.loadRequest(request)
     }
+
+    func changeStyle(name styleName: String) {
+        guard
+            let stylePath = NSBundle.mainBundle().pathForResource(styleName, ofType: "css"),
+            var styleContent = try? String(contentsOfFile: stylePath, encoding: NSUTF8StringEncoding) else {
+                return
+        }
+        styleContent = styleContent.stringByReplacingOccurrencesOfString("\\s", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
+
+        let scriptContent = "injectStyle('\(styleContent)', 1)"
+
+        webView.evaluateJavaScript(scriptContent) { (response, error) -> Void in
+            print(response, error)
+        }
+
+    }
+
+    @IBAction func yoClicked(sender: UIBarButtonItem) {
+        changeStyle(name: "nightshift")
+    }
+
+    @IBAction func yaClicked(sender: UIBarButtonItem) {
+        changeStyle(name: "solarized")
+    }
+
 }
 
 extension ViewController: UITextFieldDelegate {
