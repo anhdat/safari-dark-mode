@@ -23,5 +23,7 @@ class ThemedWebView: WKWebView {
         config.userContentController.addUserScript(script)
 
         super.init(frame: CGRectZero, configuration: config)
+
+        self.allowsBackForwardNavigationGestures = true
     }
 }
