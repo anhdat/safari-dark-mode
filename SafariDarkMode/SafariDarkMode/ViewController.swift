@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import RealmSwift
 
 class ViewController: UIViewController {
     @IBOutlet weak var barView: UIView!
@@ -24,9 +25,15 @@ class ViewController: UIViewController {
     var webViewContext:UInt8 = 0
     var navigationViewContext:UInt8 = 1
 
+    var store: Realm
+    var themes: Results<Theme>
+
 
     required init?(coder aDecoder: NSCoder) {
         self.webView = ThemedWebView()
+        self.store = try! Realm()
+        self.themes = store.themes
+
         super.init(coder: aDecoder)
     }
 
@@ -36,6 +43,30 @@ class ViewController: UIViewController {
         setupViews()
         setupObserver()
         loadHomepage()
+
+        let cssContent1 = cssContentFromFileName("solarized")!
+        store.addTheme(1, css: cssContent1, name: "Solarized")
+
+        let cssContent2 = cssContentFromFileName("nightshift")!
+        store.addTheme(2, css: cssContent2, name: "Night Shift")
+
+    }
+
+    func saveInitialData() {
+        let savingURL = NSFileManager
+            .defaultManager()
+            .URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+            .first?
+            .URLByAppendingPathComponent("initialData.realm")
+        guard let savingPath = savingURL?.path else {
+            print("Can't save with no path")
+            return
+        }
+        do {
+            try self.store.writeCopyToPath(savingPath)
+        } catch {
+            print(error)
+        }
     }
 
     func loadHomepage(url: NSURL = NSURL(string: "https://www.google.com.vn")!) {
@@ -69,7 +100,9 @@ class ViewController: UIViewController {
         self.navigationController?.hidesBarsOnSwipe = true
     }
 
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    override func viewWillTransitionToSize(
+        size: CGSize,
+        withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         barView.frame = CGRect(x: 0, y: 0, width: size.width, height: 30)
     }
 
@@ -93,13 +126,11 @@ class ViewController: UIViewController {
 
     func changeStyle(name styleName: String) {
         guard
-            let stylePath = NSBundle.mainBundle().pathForResource(styleName, ofType: "css"),
-            var styleContent = try? String(contentsOfFile: stylePath, encoding: NSUTF8StringEncoding) else {
+            let theme = themes.filter("name = '\(styleName)'").first else {
                 return
         }
-        styleContent = styleContent.stringByReplacingOccurrencesOfString("\\s", withString: "", options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
 
-        let scriptContent = "injectStyle('\(styleContent)', 1)"
+        let scriptContent = "injectStyle('\(theme.css)', 1)"
 
         webView.evaluateJavaScript(scriptContent) { (response, error) -> Void in
             print(response, error)
@@ -108,11 +139,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func yoClicked(sender: UIBarButtonItem) {
-        changeStyle(name: "nightshift")
+        changeStyle(name: "Night Shift")
     }
 
     @IBAction func yaClicked(sender: UIBarButtonItem) {
-        changeStyle(name: "solarized")
+        changeStyle(name: "Solarized")
     }
 
 }
@@ -137,7 +168,11 @@ extension ViewController: UITextFieldDelegate {
 
 
 extension ViewController: WKNavigationDelegate {
-    func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
+    func webView(
+        webView: WKWebView,
+        didFailProvisionalNavigation navigation: WKNavigation!,
+        withError error: NSError)
+    {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
         presentViewController(alert, animated: true, completion: nil)

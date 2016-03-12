@@ -18,7 +18,7 @@ Is a night theme web browser
 
 Select theme from database
 - [x] Write 2 button to load CSS content, inject it to current view
-- [ ] Install Realm
-- [ ] Write data scheme
+- [x] Install Realm
+- [x] Write data scheme: for the MVP app, only ID, name and the css is stored
 - [ ] Generate initial data
 - [ ] Write setting page to change theme

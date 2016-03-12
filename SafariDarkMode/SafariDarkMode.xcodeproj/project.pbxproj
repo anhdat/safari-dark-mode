@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A7D60421C9322C10010D204 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60411C9322C10010D204 /* StringHelpers.swift */; };
 		1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D60431C9322DD0010D204 /* ThemedWebView.swift */; };
 		1A7D60461C9329160010D204 /* BackgroundInjection.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60451C9329160010D204 /* BackgroundInjection.js */; };
 		1A7D60491C933F8D0010D204 /* nightshift.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60471C933F8D0010D204 /* nightshift.css */; };
 		1A7D604A1C933F8D0010D204 /* solarized.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60481C933F8D0010D204 /* solarized.css */; };
+		1AC8962A1C944FD70067C7B5 /* String+CSSSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896291C944FD70067C7B5 /* String+CSSSource.swift */; };
+		1AC8962C1C9450B30067C7B5 /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8962B1C9450B30067C7B5 /* String+URL.swift */; };
+		1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7AE1C93FA45008D386B /* Theme.swift */; };
+		1AD0B7B11C93FEA0008D386B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7B01C93FEA0008D386B /* Database.swift */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
 		1AE4027D1C931918004B212D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027C1C931918004B212D /* ViewController.swift */; };
 		1AE402801C931918004B212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4027E1C931918004B212D /* Main.storyboard */; };
@@ -19,6 +22,7 @@
 		1AE402851C931918004B212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE402831C931918004B212D /* LaunchScreen.storyboard */; };
 		1AE402901C931919004B212D /* SafariDarkModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4028F1C931919004B212D /* SafariDarkModeTests.swift */; };
 		1AE4029B1C931919004B212D /* SafariDarkModeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4029A1C931919004B212D /* SafariDarkModeUITests.swift */; };
+		29A0AB0EC4A315F31031F07A /* Pods_SafariDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E502E40A1E5717714BD89B /* Pods_SafariDarkMode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A7D60411C9322C10010D204 /* StringHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		03E502E40A1E5717714BD89B /* Pods_SafariDarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafariDarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7D60431C9322DD0010D204 /* ThemedWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedWebView.swift; sourceTree = "<group>"; };
 		1A7D60451C9329160010D204 /* BackgroundInjection.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BackgroundInjection.js; sourceTree = "<group>"; };
 		1A7D60471C933F8D0010D204 /* nightshift.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = nightshift.css; sourceTree = "<group>"; };
 		1A7D60481C933F8D0010D204 /* solarized.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = solarized.css; sourceTree = "<group>"; };
+		1AC896291C944FD70067C7B5 /* String+CSSSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CSSSource.swift"; sourceTree = "<group>"; };
+		1AC8962B1C9450B30067C7B5 /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		1AD0B7AE1C93FA45008D386B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1AD0B7B01C93FEA0008D386B /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4027A1C931918004B212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE4027C1C931918004B212D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 		1AE402961C931919004B212D /* SafariDarkModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariDarkModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4029A1C931919004B212D /* SafariDarkModeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariDarkModeUITests.swift; sourceTree = "<group>"; };
 		1AE4029C1C931919004B212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D134394DB7D186502C63B8 /* Pods-SafariDarkMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariDarkMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafariDarkMode/Pods-SafariDarkMode.release.xcconfig"; sourceTree = "<group>"; };
+		E1700B09F8DEBD9A641B6EC6 /* Pods-SafariDarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariDarkMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafariDarkMode/Pods-SafariDarkMode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A0AB0EC4A315F31031F07A /* Pods_SafariDarkMode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119288110988E84D6984A6E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E502E40A1E5717714BD89B /* Pods_SafariDarkMode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AC8962D1C9450F10067C7B5 /* String Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1AC896291C944FD70067C7B5 /* String+CSSSource.swift */,
+				1AC8962B1C9450B30067C7B5 /* String+URL.swift */,
+			);
+			name = "String Helpers";
+			sourceTree = "<group>";
+		};
 		1AE4026E1C931918004B212D = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,8 @@
 				1AE4028E1C931919004B212D /* SafariDarkModeTests */,
 				1AE402991C931919004B212D /* SafariDarkModeUITests */,
 				1AE402781C931918004B212D /* Products */,
+				2F5590F3B4B37B67FE4C346C /* Pods */,
+				119288110988E84D6984A6E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +139,10 @@
 			children = (
 				1AE4027A1C931918004B212D /* AppDelegate.swift */,
 				1AE4027C1C931918004B212D /* ViewController.swift */,
+				1AC8962D1C9450F10067C7B5 /* String Helpers */,
 				1AE4027E1C931918004B212D /* Main.storyboard */,
-				1A7D60411C9322C10010D204 /* StringHelpers.swift */,
+				1AD0B7AE1C93FA45008D386B /* Theme.swift */,
+				1AD0B7B01C93FEA0008D386B /* Database.swift */,
 				1A7D60431C9322DD0010D204 /* ThemedWebView.swift */,
 				1A7D60451C9329160010D204 /* BackgroundInjection.js */,
 				1A7D60471C933F8D0010D204 /* nightshift.css */,
@@ -140,6 +172,15 @@
 			path = SafariDarkModeUITests;
 			sourceTree = "<group>";
 		};
+		2F5590F3B4B37B67FE4C346C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1700B09F8DEBD9A641B6EC6 /* Pods-SafariDarkMode.debug.xcconfig */,
+				44D134394DB7D186502C63B8 /* Pods-SafariDarkMode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AE4029F1C931919004B212D /* Build configuration list for PBXNativeTarget "SafariDarkMode" */;
 			buildPhases = (
+				899D7016C6A6EBA9C50AB62B /* Check Pods Manifest.lock */,
 				1AE402731C931918004B212D /* Sources */,
 				1AE402741C931918004B212D /* Frameworks */,
 				1AE402751C931918004B212D /* Resources */,
+				E948741223C8640EB4412BDF /* Embed Pods Frameworks */,
+				52C6022306F1B5452A76D2CA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,15 +314,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52C6022306F1B5452A76D2CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafariDarkMode/Pods-SafariDarkMode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899D7016C6A6EBA9C50AB62B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E948741223C8640EB4412BDF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafariDarkMode/Pods-SafariDarkMode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AE402731C931918004B212D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC8962C1C9450B30067C7B5 /* String+URL.swift in Sources */,
+				1AC8962A1C944FD70067C7B5 /* String+CSSSource.swift in Sources */,
+				1AD0B7B11C93FEA0008D386B /* Database.swift in Sources */,
 				1AE4027D1C931918004B212D /* ViewController.swift in Sources */,
 				1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */,
+				1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */,
 				1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */,
-				1A7D60421C9322C10010D204 /* StringHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +513,7 @@
 		};
 		1AE402A01C931919004B212D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1700B09F8DEBD9A641B6EC6 /* Pods-SafariDarkMode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -433,6 +529,7 @@
 		};
 		1AE402A11C931919004B212D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D134394DB7D186502C63B8 /* Pods-SafariDarkMode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

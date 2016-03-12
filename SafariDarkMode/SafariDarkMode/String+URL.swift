@@ -1,9 +1,9 @@
 //
-//  StringHelpers.swift
-//  Browser
+//  String+URL.swift
+//  SafariDarkMode
 //
-//  Created by Dat Truong on 10/2/15.
-//  Copyright © 2015 Dat Truong. All rights reserved.
+//  Created by Dat Truong on 3/12/16.
+//  Copyright © 2016 Dat Truong. All rights reserved.
 //
 
 import Foundation
@@ -25,5 +25,4 @@ extension String {
         }
         return self
     }
-    
 }
