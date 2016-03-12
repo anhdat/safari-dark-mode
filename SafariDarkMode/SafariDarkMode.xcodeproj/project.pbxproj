@@ -13,6 +13,9 @@
 		1A7D604A1C933F8D0010D204 /* solarized.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A7D60481C933F8D0010D204 /* solarized.css */; };
 		1AC8962A1C944FD70067C7B5 /* String+CSSSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896291C944FD70067C7B5 /* String+CSSSource.swift */; };
 		1AC8962C1C9450B30067C7B5 /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8962B1C9450B30067C7B5 /* String+URL.swift */; };
+		1AC896341C9455610067C7B5 /* MainViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896331C9455610067C7B5 /* MainViewController+WKNavigationDelegate.swift */; };
+		1AC8963A1C9455C00067C7B5 /* MainViewController+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896391C9455C00067C7B5 /* MainViewController+KVO.swift */; };
+		1AC8963C1C9456490067C7B5 /* MainViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8963B1C9456490067C7B5 /* MainViewController+UITextFieldDelegate.swift */; };
 		1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7AE1C93FA45008D386B /* Theme.swift */; };
 		1AD0B7B11C93FEA0008D386B /* Realm+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
@@ -50,6 +53,9 @@
 		1A7D60481C933F8D0010D204 /* solarized.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = solarized.css; sourceTree = "<group>"; };
 		1AC896291C944FD70067C7B5 /* String+CSSSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CSSSource.swift"; sourceTree = "<group>"; };
 		1AC8962B1C9450B30067C7B5 /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		1AC896331C9455610067C7B5 /* MainViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
+		1AC896391C9455C00067C7B5 /* MainViewController+KVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+KVO.swift"; sourceTree = "<group>"; };
+		1AC8963B1C9456490067C7B5 /* MainViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		1AD0B7AE1C93FA45008D386B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Database.swift"; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +159,9 @@
 			isa = PBXGroup;
 			children = (
 				1AE4027C1C931918004B212D /* MainViewController.swift */,
+				1AC896331C9455610067C7B5 /* MainViewController+WKNavigationDelegate.swift */,
+				1AC896391C9455C00067C7B5 /* MainViewController+KVO.swift */,
+				1AC8963B1C9456490067C7B5 /* MainViewController+UITextFieldDelegate.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -407,13 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC8963C1C9456490067C7B5 /* MainViewController+UITextFieldDelegate.swift in Sources */,
 				1AC8962C1C9450B30067C7B5 /* String+URL.swift in Sources */,
 				1AC8962A1C944FD70067C7B5 /* String+CSSSource.swift in Sources */,
 				1AD0B7B11C93FEA0008D386B /* Realm+Database.swift in Sources */,
 				1AE4027D1C931918004B212D /* MainViewController.swift in Sources */,
+				1AC896341C9455610067C7B5 /* MainViewController+WKNavigationDelegate.swift in Sources */,
 				1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */,
 				1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */,
 				1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */,
+				1AC8963A1C9455C00067C7B5 /* MainViewController+KVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
