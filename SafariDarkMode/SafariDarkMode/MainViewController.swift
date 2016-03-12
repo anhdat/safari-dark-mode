@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import RealmSwift
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     @IBOutlet weak var barView: UIView!
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var backButton: UIBarButtonItem!
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITextFieldDelegate {
+extension MainViewController: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.urlField.resignFirstResponder()
 
@@ -167,7 +167,7 @@ extension ViewController: UITextFieldDelegate {
 }
 
 
-extension ViewController: WKNavigationDelegate {
+extension MainViewController: WKNavigationDelegate {
     func webView(
         webView: WKWebView,
         didFailProvisionalNavigation navigation: WKNavigation!,
@@ -184,7 +184,7 @@ extension ViewController: WKNavigationDelegate {
 }
 
 //MARK: KVO
-extension ViewController {
+extension MainViewController {
     func setupObserver() {
         self.webView.addObserver(self, forKeyPath: "loading", options: .New, context: &webViewContext)
         self.webView.addObserver(self, forKeyPath: "estimatedProgress", options: .New, context: &webViewContext)

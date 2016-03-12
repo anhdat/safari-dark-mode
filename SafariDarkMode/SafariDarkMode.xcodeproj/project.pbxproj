@@ -16,7 +16,7 @@
 		1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7AE1C93FA45008D386B /* Theme.swift */; };
 		1AD0B7B11C93FEA0008D386B /* Realm+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
-		1AE4027D1C931918004B212D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027C1C931918004B212D /* ViewController.swift */; };
+		1AE4027D1C931918004B212D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027C1C931918004B212D /* MainViewController.swift */; };
 		1AE402801C931918004B212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4027E1C931918004B212D /* Main.storyboard */; };
 		1AE402821C931918004B212D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE402811C931918004B212D /* Assets.xcassets */; };
 		1AE402851C931918004B212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE402831C931918004B212D /* LaunchScreen.storyboard */; };
@@ -54,7 +54,7 @@
 		1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Database.swift"; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4027A1C931918004B212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AE4027C1C931918004B212D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AE4027C1C931918004B212D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1AE4027F1C931918004B212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE402811C931918004B212D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AE402841C931918004B212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		1AC896321C9454270067C7B5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1AE4027C1C931918004B212D /* ViewController.swift */,
+				1AE4027C1C931918004B212D /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 				1AC8962C1C9450B30067C7B5 /* String+URL.swift in Sources */,
 				1AC8962A1C944FD70067C7B5 /* String+CSSSource.swift in Sources */,
 				1AD0B7B11C93FEA0008D386B /* Realm+Database.swift in Sources */,
-				1AE4027D1C931918004B212D /* ViewController.swift in Sources */,
+				1AE4027D1C931918004B212D /* MainViewController.swift in Sources */,
 				1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */,
 				1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */,
 				1A7D60441C9322DD0010D204 /* ThemedWebView.swift in Sources */,

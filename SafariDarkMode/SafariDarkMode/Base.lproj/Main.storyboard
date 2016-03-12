@@ -25,7 +25,7 @@
         <!--Home Screen-->
         <scene sceneID="JfF-1m-xA8">
             <objects>
-                <viewController title="Home Screen" id="vTo-9L-bTV" customClass="ViewController" customModule="SafariDarkMode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home Screen" id="vTo-9L-bTV" customClass="MainViewController" customModule="SafariDarkMode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="blX-pI-sxQ"/>
                         <viewControllerLayoutGuide type="bottom" id="aQN-Oo-8aA"/>
