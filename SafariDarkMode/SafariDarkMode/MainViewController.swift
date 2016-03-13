@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import WebKit
-import RealmSwift
 
 class MainViewController: UIViewController {
     @IBOutlet weak var barView: UIView!
@@ -19,20 +17,18 @@ class MainViewController: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var topNavigationBar: UINavigationItem!
 
-    var webView: WKWebView
+    var webView: ThemedWebView
+    let storage: Storage
 
     //  KVO contexts
     var webViewContext:UInt8 = 0
     var navigationViewContext:UInt8 = 1
 
-    var store: Realm
-    var themes: Results<Theme>
 
 
     required init?(coder aDecoder: NSCoder) {
         self.webView = ThemedWebView()
-        self.store = try! Realm(path: getInitialDataFilePath()!)
-        self.themes = store.themes
+        self.storage = Storage()
 
         super.init(coder: aDecoder)
     }
@@ -109,7 +105,7 @@ class MainViewController: UIViewController {
 
     func changeStyle(name styleName: String) {
         guard
-            let theme = themes.filter("name = '\(styleName)'").first else {
+            let theme = self.storage.themes.filter("name = '\(styleName)'").first else {
                 return
         }
 

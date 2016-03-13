@@ -19,6 +19,7 @@
 		1AC8963E1C9515010067C7B5 /* initialData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 1AC8963D1C9514F90067C7B5 /* initialData.realm */; };
 		1AC896401C95174B0067C7B5 /* String+FileLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8963F1C95174B0067C7B5 /* String+FileLocations.swift */; };
 		1AC896421C9518890067C7B5 /* MainViewController+InitialThemesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896411C9518890067C7B5 /* MainViewController+InitialThemesData.swift */; };
+		1AC896441C951BAC0067C7B5 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC896431C951BAC0067C7B5 /* Storage.swift */; };
 		1AD0B7AF1C93FA45008D386B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7AE1C93FA45008D386B /* Theme.swift */; };
 		1AD0B7B11C93FEA0008D386B /* Realm+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */; };
 		1AE4027B1C931918004B212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4027A1C931918004B212D /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 		1AC8963D1C9514F90067C7B5 /* initialData.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = initialData.realm; sourceTree = "<group>"; };
 		1AC8963F1C95174B0067C7B5 /* String+FileLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileLocations.swift"; sourceTree = "<group>"; };
 		1AC896411C9518890067C7B5 /* MainViewController+InitialThemesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+InitialThemesData.swift"; sourceTree = "<group>"; };
+		1AC896431C951BAC0067C7B5 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		1AD0B7AE1C93FA45008D386B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Database.swift"; sourceTree = "<group>"; };
 		1AE402771C931918004B212D /* SafariDarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariDarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 			children = (
 				1AD0B7AE1C93FA45008D386B /* Theme.swift */,
 				1AD0B7B01C93FEA0008D386B /* Realm+Database.swift */,
+				1AC896431C951BAC0067C7B5 /* Storage.swift */,
 			);
 			name = Storage;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				1AC896401C95174B0067C7B5 /* String+FileLocations.swift in Sources */,
 				1AC896421C9518890067C7B5 /* MainViewController+InitialThemesData.swift in Sources */,
 				1AC8963A1C9455C00067C7B5 /* MainViewController+KVO.swift in Sources */,
+				1AC896441C951BAC0067C7B5 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

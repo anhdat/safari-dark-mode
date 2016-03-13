@@ -20,5 +20,5 @@ Select theme from database
 - [x] Write 2 button to load CSS content, inject it to current view
 - [x] Install Realm
 - [x] Write data scheme: for the MVP app, only ID, name and the css is stored
-- [ ] Generate initial data
+- [x] Generate initial data
 - [ ] Write setting page to change theme

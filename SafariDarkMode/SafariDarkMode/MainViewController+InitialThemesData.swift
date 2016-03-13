@@ -24,7 +24,7 @@ extension MainViewController {
             return
         }
         do {
-            try self.store.writeCopyToPath(savingPath)
+            try self.storage.store.writeCopyToPath(savingPath)
         } catch {
             print(error)
         }

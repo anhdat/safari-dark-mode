@@ -9,11 +9,6 @@
 import Foundation
 import RealmSwift
 
-extension Realm {
-    var themes: Results<Theme> {
-        return objects(Theme.self)
-    }
-}
 
 extension Realm {
     func addTheme(id: Int, css: String, name: String = "") {
