@@ -23,4 +23,8 @@ extension Realm {
     var themes: Results<Theme> {
         return objects(Theme.self)
     }
+
+    func themeWithId(themeId: Int) -> Theme? {
+        return self.themes.filter("id = \(themeId)").first
+    }
 }

@@ -27,9 +27,10 @@ class MainViewController: UIViewController {
 
 
     required init?(coder aDecoder: NSCoder) {
-        self.webView = ThemedWebView()
         self.storage = Storage()
-
+        let selectedTheme = self.storage.store.themeWithId(DefaultThemeId.NightShift.rawValue)!
+        self.webView = ThemedWebView(theme: selectedTheme)
+        
         super.init(coder: aDecoder)
     }
 
