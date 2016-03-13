@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
 
     required init?(coder aDecoder: NSCoder) {
         self.webView = ThemedWebView()
-        self.store = try! Realm()
+        self.store = try! Realm(path: getInitialDataFilePath()!)
         self.themes = store.themes
 
         super.init(coder: aDecoder)
@@ -44,29 +44,12 @@ class MainViewController: UIViewController {
         setupObserver()
         loadHomepage()
 
-        let cssContent1 = cssContentFromFileName("solarized")!
-        store.addTheme(1, css: cssContent1, name: "Solarized")
-
-        let cssContent2 = cssContentFromFileName("nightshift")!
-        store.addTheme(2, css: cssContent2, name: "Night Shift")
 
     }
 
-    func saveInitialData() {
-        let savingURL = NSFileManager
-            .defaultManager()
-            .URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-            .first?
-            .URLByAppendingPathComponent("initialData.realm")
-        guard let savingPath = savingURL?.path else {
-            print("Can't save with no path")
-            return
-        }
-        do {
-            try self.store.writeCopyToPath(savingPath)
-        } catch {
-            print(error)
-        }
+    func bundlePath(path: String) -> String? {
+        let resourcePath = NSBundle.mainBundle().resourcePath as NSString?
+        return resourcePath?.stringByAppendingPathComponent(path)
     }
 
     func loadHomepage(url: NSURL = NSURL(string: "https://www.google.com.vn")!) {
